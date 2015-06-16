@@ -12,8 +12,6 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'chriskempson/base16-vim'
-Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end() 	  "required
@@ -22,8 +20,10 @@ filetype plugin indent on "required
 " Colorscheme settings
 syntax on
 set nu
-let base16colorspace=256
 set background=dark
+let base16colorspace=256
+colorscheme base16-bright
+
 
 " Tab settings
 set ts=2 sts=2 sw=2 expandtab
