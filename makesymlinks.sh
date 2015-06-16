@@ -29,4 +29,4 @@ done
 echo "Moving i3/config to $olddir"
 mv ~/.i3/i3/config ~/dotfiles_old
 echo "Creating symlink to i3/config in home directory."
-ln -s $dir/i3config ~/.i3/i3/config
+ln -s $dir/i3config ~/.config/i3/config
