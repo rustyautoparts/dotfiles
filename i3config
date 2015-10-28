@@ -179,4 +179,4 @@ bar {
 #exec i3-config-wizard
 
 # Dual Monitor support on startup
-exec --no-startup-id xrandr --output VGA-0 --auto --left-of VGA-1
+#exec --no-startup-id xrandr --output VGA-0 --auto --left-of VGA-1
