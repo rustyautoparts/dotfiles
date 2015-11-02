@@ -3,6 +3,7 @@
 #
 
 export TERM=rxvt-unicode-256color
+export TERMINAL=urxvt
 
 #Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/base16-bright.dark.sh"
@@ -16,10 +17,13 @@ alias ls='ls --color=auto'
 PS1='\[\e[1;32m\]\u\[\e[1;36m\]@\h \[\e[0;36m\]\w \[\e[1;37m\]$\[\e[0m\] '
 
 #When unknown command is run, searches for pkg in Pacman repository
-source /usr/share/doc/pkgfile/command-not-found.bash
+#source /usr/share/doc/pkgfile/command-not-found.bash
 
 # Add RubyGems to my path
-PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+if [ $(dpkg-query -W -f='${Status}' ruby 2>/dev/null | grep -c "ok installed") -eq 1 ]
+then
+  PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+fi
 
 # Set vim as default editor
 export VISUAL=vim

@@ -1,7 +1,7 @@
 # Sets VirtualBox video drivers
 /usr/bin/VBoxClient-all
 
-[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+[ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
 
 # Sets i3 background image
 #feh --bg-scale ~/.config/mountains.jpg

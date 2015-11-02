@@ -10,6 +10,7 @@ URxvt.scrollstyle:		plain
 URxvt.secondaryScreen:		1
 URxvt.secondaryScroll:		0
 URxvt.depth: 			32
+URxvt.font:       xft:SourceCodePro:size=11
 !URxvt.background: 		[65]#000000
 
 ! Base16 Bright
@@ -62,3 +63,4 @@ URxvt.depth: 			32
 !*.color19:      base02
 !*.color20:      base04
 !*.color21:      base06
+Xft.lcdfilter: lcddefault

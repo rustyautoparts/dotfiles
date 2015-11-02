@@ -13,7 +13,7 @@ set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+font pango: SourceCodePro 9
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -171,14 +171,14 @@ bar {
 }
 
 # Start Compton for composite support (allows for transparent console)
-exec --no-startup-id compton
+#exec --no-startup-id compton
 
 # Start GNOME Settings Daemon for GTK theme support
-exec --no-startup-id gnome-settings-daemon
+#exec --no-startup-id gnome-settings-daemon
 
 # Open Firefox on startup
-exec firefox
+#exec firefox
 
 # Initialize dual monitor setup
-exec --no-startup-id xrandr --output VGA-0 --auto --left-of VGA-1
-exec --no-startup-id davmail
+#exec --no-startup-id xrandr --output VGA-0 --auto --left-of VGA-1
+#exec --no-startup-id davmail
