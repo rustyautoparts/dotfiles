@@ -19,6 +19,9 @@ PS1='\[\e[1;32m\]\u\[\e[1;36m\]@\h \[\e[0;36m\]\w \[\e[1;37m\]$\[\e[0m\] '
 #When unknown command is run, searches for pkg in Pacman repository
 #source /usr/share/doc/pkgfile/command-not-found.bash
 
+#Sources aliases
+source ~/.bash_aliases
+
 # Add RubyGems to my path
 if [ $(dpkg-query -W -f='${Status}' ruby 2>/dev/null | grep -c "ok installed") -eq 1 ]
 then
