@@ -13,3 +13,5 @@ numlockx &
 
 # Launches i3 window manager on startx
 exec i3 
+# Launches awesomewm
+#exec awesome
